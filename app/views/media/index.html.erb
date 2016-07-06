@@ -1,0 +1,11 @@
+<h1>Instagram Lookup</h1>
+  <% @posts.each do |post| %>
+  <div class="col-sm-12 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag post["images"]["thumbnail"]["url"] %>
+      <div class="caption">
+        <%= post["caption"]["text"] %>
+      </div>
+    </div>
+  </div>
+<% end %>
